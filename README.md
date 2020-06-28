@@ -1,2 +1,2 @@
-# goit-markup-hw-08
-ДЗ8
+# home-assignment-2
+home-assignment-2
