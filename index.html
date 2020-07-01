@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
     <link
       rel="stylesheet"
@@ -8,19 +9,27 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fnts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header>
       <div class="container">
-      <div class="site-nav">
+        <div class="site-nav">
+            <nav>
+              <div class="mobile-nav-view">
             <a class="logotype" href="">
             <span class="accent-text">Web</span>
             <span class="regular-text">Studio</span>
           </a>
-          <nav>
+          <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-cross" href="./svg/symbol-defs.svg#icon-menu-close"></use>
+              <use class="icon-menu" href="./svg/symbol-defs.svg#icon-menu-open"></use>
+            </svg>
+          </button></div>
+          <div class="menu-container" id="menu-container" data-menu>
           <ul class="main-navigation">
             <li class="nav1">
               <a class="link-current" href="./index.html">Студия</a>
@@ -30,10 +39,9 @@
             </li>
             <li class="nav1"><a class="nav1-url" href="">Контакты</a></li>
           </ul>
-        </nav>
           <ul class="mail">
             <li class="mail1">
-              <a href="" class="icon-flex">
+              <a href="" class="icon-flex mobile-mail-nav">
               <svg class="mail1-icon">
                 <use href="./svg/symbol-defs.svg#icon-envelopenew"></use>
               </svg>
@@ -41,18 +49,21 @@
             </a>
             </li>
             <li class="mail1">
-            <a href="" class="icon-flex">
+            <a href="" class="icon-flex phone-mail-nav">
               <svg class="mail1-icon2">
                 <use href="./svg/symbol-defs.svg#icon-Vector"></use>
               </svg>
               +38 096 111 11 11</a>
           </li>
           </ul>
+          </nav>
+          </div>
+          </div>
         </div>
     </header>
     <section class="hero-order">
         <h1 class="hero">эффективные решения для вашего бизнеса</h1>
-        <button type="button href="" class="order-service" data-modal-open >Заказать услугу </button>
+        <button type="button class="order-service" data-modal-open >Заказать услугу </button>
         </section>
       <section class="container">
           <ul class="benefits">
@@ -62,8 +73,8 @@
                 <svg class="antenna">
                   <use href="./svg/symbol-defs.svg#icon-antenna"></use>
                 </svg>
-                </div>
-              </a>
+                </a>
+              </div>
               <h3 class="benefits-head">Внимание к деталям</h3>
               <p class="benefits-descr">
                 Идейные соображения, а также начало повседневной работы по
@@ -76,8 +87,8 @@
                 <svg class="clock">
                   <use href="./svg/symbol-defs.svg#icon-Vector3"></use>
                 </svg>
-                </div>
-              </a>
+                </a>
+              </div>
               <h3 class="benefits-head">Пунктуальность</h3>
               <p class="benefits-descr">
                 Задача организации, в особенности же рамки и место обучения
@@ -89,8 +100,8 @@
                 <a href="">
                   <svg class="monitor">
                     <use href="./svg/symbol-defs.svg#icon-Vector4"></use>
-                  </svg>
-              </div></a>
+                  </svg></a>
+              </div>
               <h3 class="benefits-head">Планирование</h3>
               <p class="benefits-descr">
                 Равным образом консультация с широким активом в значительной
@@ -102,8 +113,8 @@
                 <a href="">
                 <svg class="cosmonaut">
                   <use href="./svg/symbol-defs.svg#icon-Vector5"></use>
-                </svg>
-              </div></a>
+                </svg></a>
+              </div>
               <h3 class="benefits-head">Современные технологии</h3>
               <p class="benefits-descr">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -461,5 +472,5 @@
       </div>
     </div>
     <script src="./modal.js"></script>
-</body>
+ </body>
 </html>

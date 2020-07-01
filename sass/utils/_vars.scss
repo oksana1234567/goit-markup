@@ -18,31 +18,3 @@ $duration: 250ms;
   font-family: $font-main;
   font-style: $font-style;
 }
-
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-a {
-  text-decoration: none;
-  margin: 0px;
-  padding: 0px;
-}
-li {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-}
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
