@@ -1,0 +1,112 @@
+.benefits-head {
+  color: $color-black;
+  @extend %font;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.benefits {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    width: 1200px;
+    border-bottom: 1px solid #ececec;
+
+    & .benefits-element {
+      height: 251px;
+      // width: 270px;
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+
+.benefits-element {
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .benefits & + & {
+      margin-left: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: width 1199px) {
+    width: 354px;
+  }
+}
+
+.benefits-descr {
+  color: $color-grey;
+  @extend %font;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.benefits-icon {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.picture-background {
+  display: inline-block;
+  text-decoration: none;
+  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: $background-color-grey;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+
+  @media screen and (max-width: 1200px) and (min-width: 768px) {
+    width: 354px;
+  }
+}
+
+%icon-benefits-common {
+  width: 70px;
+  height: 70px;
+}
+
+.antenna {
+  @extend %icon-benefits-common;
+}
+
+.clock {
+  @extend %icon-benefits-common;
+}
+
+.monitor {
+  @extend %icon-benefits-common;
+}
+
+.cosmonaut {
+  @extend %icon-benefits-common;
+}

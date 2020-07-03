@@ -1,4 +1,5 @@
 .logotype {
+  display: inline-block;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -24,12 +25,6 @@
   color: $color-black;
 }
 
-.mobile-nav-view {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .menu-button {
   display: inline-flex;
   margin: 0;
@@ -40,6 +35,11 @@
 
   @media screen and (min-width: 768px) {
     display: none;
+  }
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    right: 5px;
+    bottom: 20px;
   }
 }
 
@@ -66,12 +66,11 @@
 }
 
 .menu-container {
-  text-align: center;
-  background-color: $color-white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    0px 4px 8px rgba(0, 0, 0, 0.04);
-
   @media screen and (max-width: 767px) {
+    text-align: center;
+    background-color: $color-white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 4px 8px rgba(0, 0, 0, 0.04);
     display: none;
     position: absolute;
     top: 100%;
@@ -86,11 +85,35 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
 .site-nav {
-  position: relative;
+  width: max-content;
+  @media screen and (max-width: 767px) {
+    position: relative;
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-navigation {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 85px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 81px;
+  }
 }
 
 .main-navigation li a {
@@ -122,6 +145,11 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .main-navigation .nav1 + .nav1 {
+    margin-left: 50px;
+  }
+}
 .nav1-url {
   &:hover,
   &:focus {
@@ -164,13 +192,11 @@
   }
 }
 
-.mobile-mail-nav {
-  margin-top: 60px;
-}
-
 .phone-mail-nav {
-  margin-top: 16px;
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+    margin-bottom: 60px;
+  }
 }
 
 %mail-icon-common {
@@ -230,4 +256,54 @@
 
 .main-navigation .link-current {
   color: $color-hover;
+}
+
+@media screen and (min-width: 768px) {
+  .mail {
+    display: flex;
+    align-items: baseline;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail {
+    margin-left: 305px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail1 {
+    .mail & + & {
+      margin-left: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .icon-flex {
+      display: flex;
+      align-items: center;
+      transition-property: fill;
+      transition-duration: $duration;
+      transition-timing-function: $cubic;
+
+      &:hover,
+      &:focus {
+        fill: $color-hover;
+        color: $color-hover;
+      }
+    }
+  }
 }
