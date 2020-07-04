@@ -1,11 +1,16 @@
 .social-icon-footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 
   & .social-element {
     height: 20px;
     width: 20px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .social-icon-footer {
+    justify-content: center;
   }
 }
 
@@ -91,7 +96,8 @@
 
 @media screen and (min-width: 1200px) {
   .developed {
-    @extend %font;
+    font-family: $font-main;
+    font-style: $font-style;
     font-weight: normal;
     font-size: 12px;
     line-height: 2;
@@ -123,13 +129,7 @@
   margin-bottom: 21px;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer-element2 {
-    margin-left: 100px;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer-element2 {
     margin-top: 30px;
   }
@@ -138,6 +138,12 @@
 @media screen and (max-width: 767px) {
   .footer-element {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-element-join {
+    margin-left: 165px;
   }
 }
 
@@ -153,6 +159,19 @@
 
 .form-footer {
   display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .form-footer {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-tablet-flex {
+    display: flex;
+    margin-bottom: 60px;
+  }
 }
 
 .submit-footer {
@@ -177,9 +196,8 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   position: relative;
-  cursor: pointer;
   border: none;
-  width: 200px;
+  display: flex;
 }
 
 .input-footer {
@@ -201,13 +219,27 @@
   color: $color-grey-footer;
 }
 
-.flex-footer {
-  display: flex;
-  flex-direction: column;
-  padding-top: 47px;
-  padding-bottom: 28px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .flex-footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 47px;
+    padding-bottom: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 47px;
+    padding-bottom: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
 }

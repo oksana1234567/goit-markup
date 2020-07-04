@@ -21,40 +21,49 @@
   <body>
     <header>
       <div class="container">
-        <div class="site-nav">
-          <a class="logotype" href="">
-            <span class="accent-text">Web</span>
-            <span class="regular-text">Studio</span>
-          </a>
-          <nav>
-            <ul class="main-navigation">
-              <li class="nav1">
-                <a class="nav1-url" href="./index.html">Студия</a>
-              </li>
-              <li class="nav1">
+        <nav>
+          <div class="site-nav">
+            <a class="logotype" href="">
+              <span class="accent-text">Web</span>
+              <span class="regular-text">Studio</span>
+            </a>
+            <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="icon-cross" href="./svg/symbol-defs.svg#icon-menu-close"></use>
+                <use class="icon-menu" href="./svg/symbol-defs.svg#icon-menu-open"></use>
+              </svg>
+            </button>
+            <div class="menu-container" id="menu-container" data-menu>
+              <ul class="main-navigation">
+                <li class="nav1">
+                  <a href="./index.html">Студия</a>
+                </li>
+                <li class="nav1">
                 <a class="link-current" href="./portfolio.html">Портфолио</a>
               </li>
               <li class="nav1"><a class="nav1-url" href="">Контакты</a></li>
             </ul>
-          </nav>
           <ul class="mail">
             <li class="mail1">
-              <a href="" class="icon-flex">
-                <svg class="mail1-icon">
-                  <use href="./svg/symbol-defs.svg#icon-envelopenew"></use>
-                </svg>
-                info@devstudio.com
-              </a>
+              <a href="" class="icon-flex mobile-mail-nav">
+              <svg class="mail1-icon">
+                <use href="./svg/symbol-defs.svg#icon-envelopenew"></use>
+              </svg>
+              info@devstudio.com
+            </a>
             </li>
             <li class="mail1">
-              <a href="" class="icon-flex">
-                <svg class="mail1-icon2">
-                  <use href="./svg/symbol-defs.svg#icon-Vector"></use>
-                </svg>
-                +38 096 111 11 11</a>
-            </li>
+            <a href="" class="icon-flex phone-mail-nav">
+              <svg class="mail1-icon2">
+                <use href="./svg/symbol-defs.svg#icon-Vector"></use>
+              </svg>
+              +38 096 111 11 11</a>
+          </li>
           </ul>
+          </nav>
           </div>
+          </div>
+        </div>
     </header>
     <div class="container">
       <main>
@@ -93,9 +102,13 @@
               <a href="">
                 <img
                   class="examples"
+                    srcset="
+          ./jpg/techno.jpg 1x,
+          ./jpg/techno2x.jpg 2x,
+          "
                   src="./jpg/img1.jpg"
                   alt="Технокряк"
-                  width="370px"
+                  min-width="370px"
                 />
                 <!-- <p class="desc-for-header">
                 Технокряк это современная площадка распространения
@@ -112,9 +125,13 @@
               <a href="">
                 <img
                   class="examples"
+                  srcset="
+          ./jpg/img2-new.jpg 1x,
+          ./jpg/img2-new2x.jpg 2x,
+          "
                   src="./jpg/img2.jpg"
                   alt="Постер"
-                  width="370px"
+                  min-width="370px"
                 />
 <!-- <p class="desc-for-header">
                 Технокряк это современная площадка распространения
@@ -122,7 +139,7 @@
                 шпионажа и атак на защищённые сервера конкурентов.
                 </p> -->
                 </div>
-                <h2 class="second-header">Постер New Orlean vs Golden Stars</h2>
+                <h2 class="second-header">Постер New Orlean vs Golden ...</h2>
                 <p class="filtrs">Дизайн</p>
                 <p class="desc-for-header"></p>
               </a>
@@ -132,9 +149,13 @@
               <a href="">
                 <img
                   class="examples"
+                   srcset="
+          ./jpg/img3-new.jpg 1x,
+          ./jpg/img3-new2x.jpg 2x,
+          "
                   src="./jpg/img3.jpg"
                   alt="Ресторан"
-                  width="370px"
+                  min-width="370px"
                 />
                 <!-- <p class="desc-for-header"> Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                 </p> -->
@@ -149,9 +170,13 @@
               <a href="">
                 <img
                   class="examples"
+                   srcset="
+          ./jpg/img4-new.jpg 1x,
+          ./jpg/img4-new2x.jpg 2x,
+          "
                   src="./jpg/img4.jpg"
                   alt="Прайм"
-                  width="370px"
+                  min-width="370px"
                 />
                 <!-- <p class="desc-for-header">
                 Технокряк это современная площадка распространения
@@ -169,9 +194,13 @@
               <a href="">
                 <img
                   class="examples"
+                   srcset="
+          ./jpg/img5-new.jpg 1x,
+          ./jpg/img5-new2x.jpg 2x,
+          "
                   src="./jpg/img5.jpg"
                   alt="Проект"
-                  width="370px"
+                  min-width="370px"
                 />
                 <!-- <p class="desc-for-header">
                 Технокряк это современная площадка распространения
@@ -189,9 +218,13 @@
               <a href="">
                 <img
                   class="examples"
+                   srcset="
+          ./jpg/img6-new.jpg 1x,
+          ./jpg/img6-new2x.jpg 2x,
+          "
                   src="./jpg/img6.jpg"
                   alt="Монитор"
-                  width="370px"
+                  min-width="370px"
                 />
 <!-- <p class="desc-for-header">
                 Технокряк это современная площадка распространения
@@ -209,9 +242,13 @@
               <a  href="">
                 <img
                   class="examples"
+                   srcset="
+          ./jpg/img7-new.jpg 1x,
+          ./jpg/img7-new2x.jpg 2x,
+          "
                   src="./jpg/img7.jpg"
                   alt="Издание"
-                  width="370px"
+                  min-width="370px"
                 />
 <!-- <p class="desc-for-header">
                 Технокряк это современная площадка распространения
@@ -229,9 +266,13 @@
               <a href="">
                 <img
                   class="examples"
+                   srcset="
+          ./jpg/img8-new.jpg 1x,
+          ./jpg/img8-new2x.jpg 2x,
+          "
                   src="./jpg/img8.jpg"
                   alt="ЛАБ"
-                  width="370px"
+                  min-width="370px"
                 />
 <!-- <p class="desc-for-header">
                 Технокряк это современная площадка распространения
@@ -249,9 +290,13 @@
               <a href="">
                 <img
                   class="examples"
+                   srcset="
+          ./jpg/img9-new.jpg 1x,
+          ./jpg/img9-new2x.jpg 2x,
+          "
                   src="./jpg/img9.jpg"
                   alt="Рост"
-                  width="370px"
+                  min-width="370px"
                 />
 <!-- <p class="desc-for-header">
                 Технокряк это современная площадка распространения
@@ -268,71 +313,74 @@
         </section>
       </main>
     </div>
-    <footer class="footer-class">
-      <div class="container">
-        <div class="flex-footer">
-          <div class="footer-element">
-            <a class="logotype2" href="">
-              <span class="accent-text">Web</span>
-              <span class="regular-text2">Studio</span>
-            </a>
-            <address>
-              <p class="adress-footer">г. Киев, пр-т Леси Украинки, 26</p>
-              <p class="mail-footer">info@example.com</p>
-              <p class="number-footer">+38 099 111 11 11</p>
-            </address>
-          </div>
-          <div class="footer-element">
-            <h3 class="join">присоединяйтесь</h3>
-            <ul class="social-icon-footer">
-              <li class="social-element">
-                <a href="" class="social-element-url">
-                  <svg class="icon-footer2">
-                    <use href="./svg/symbol-defs.svg#icon-finst"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-element">
-                <a href="" class="social-element-url">
-                  <svg class="icon-footer2">
-                    <use href="./svg/symbol-defs.svg#icon-ftw"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-element">
-                <a href="" class="social-element-url">
-                  <svg class="icon-footer2">
-                    <use href="./svg/symbol-defs.svg#icon-ffac"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-element">
-                <a href="" class="social-element-url">
-                  <svg class="icon-footer2">
-                    <use href="./svg/symbol-defs.svg#icon-flink"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-element2">
-            <section class="sub">
-              <h3 class="sub-header">
-                Подпишитесь на рассылку
-              </h3>
-              <form class="form-footer">
-                <input type="email" name="mail" id="mail-footer" placeholder="E-mail" class="input-footer" autocomplete="off" />
-                <button type="submit" class="submit-footer">Подписаться <svg class="footer-svg-send">
-                    <use href="./svg/symbol-defs.svg#icon-icon-send"></use>
-                  </svg></button>
+        <footer class="footer-class">
+          <div class="container">
+            <div class="flex-footer">
+              <div class="footer-tablet-flex">
+                <div class="footer-element">
+                  <a class="logotype2" href="">
+                    <span class="accent-text">Web</span>
+                    <span class="regular-text2">Studio</span>
+                  </a>
+                  <address>
+                    <p class="adress-footer">г. Киев, пр-т Леси Украинки, 26</p>
+                    <p class="mail-footer">info@example.com</p>
+                    <p class="number-footer">+38 099 111 11 11</p>
+                  </address>
                 </div>
+                <div class="footer-element footer-element-join">
+                  <h3 class="join">присоединяйтесь</h3>
+                  <ul class="social-icon-footer">
+                    <li class="social-element">
+                      <a href="" class="social-element-url">
+                        <svg class="icon-footer2">
+                          <use href="./svg/symbol-defs.svg#icon-finst"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-element">
+                      <a href="" class="social-element-url">
+                        <svg class="icon-footer2">
+                          <use href="./svg/symbol-defs.svg#icon-ftw"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-element">
+                      <a href="" class="social-element-url">
+                        <svg class="icon-footer2">
+                          <use href="./svg/symbol-defs.svg#icon-ffac"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-element">
+                      <a href="" class="social-element-url">
+                        <svg class="icon-footer2">
+                          <use href="./svg/symbol-defs.svg#icon-flink"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-element footer-element2">
+                <section class="sub">
+                  <h3 class="sub-header">
+                    Подпишитесь на рассылку
+                  </h3>
+                  <form class="form-footer">
+                    <input type="email" name="mail" id="mail-footer" placeholder="E-mail" class="input-footer"
+                      autocomplete="off" />
+                    <button type="submit" class="submit-footer">Подписаться <svg class="footer-svg-send">
+                        <use href="./svg/symbol-defs.svg#icon-icon-send"></use>
+                      </svg></button>
+              </div>
               </form>
-          </section>
-        </div>
-      </div>
-      <p class="developed"> 2020 | Developed by GoIT Students </p>
-      </div>
-    </footer>
-    <script src="./modal.js"></script>
+              </section>
+            </div>
+          </div>
+          <p class="developed"> 2020 | Developed by GoIT Students </p>
+          </div>
+        </footer>
+      <script src="./modal.js"></script>
   </body>
 </html>

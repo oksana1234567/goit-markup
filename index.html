@@ -126,15 +126,30 @@
         <h2 class="head-2-descr">Чем мы занимаемся</h2>
         <ul class="work">
           <li class="work-element">
-            <img src="./jpg/img1.jpg" alt="Ноут" width="370px" height="290px" class="image-work" />
+            <img
+             srcset="
+          ./jpg/img9-new.jpg 1x,
+          ./jpg/img9-new2x.jpg 2x,
+          "
+            src="./jpg/img1.jpg" alt="Ноут" min-width="370px" height="290px" class="image-work" />
             <h3 class="work-head">Десктопные приложения</h3>
           </li>
           <li class="work-element">
-            <img src="./jpg/box2.jpg" alt="Смартфон" width="370px" height="290px" class="image-work" />
+            <img 
+              srcset="
+          ./jpg/box-new.jpg 1x,
+          ./jpg/box-new2x.jpg 2x,
+          "
+            src="./jpg/box2.jpg" alt="Смартфон" min-width="370px" height="290px" class="image-work" />
             <h3 class="work-head">Мобильные приложения</h3>
           </li>
           <li class="work-element">
-            <img src="./jpg/img3.jpg" alt="Монитор2" width="370px" height="290px" class="image-work"/>
+            <img 
+               srcset="
+          ./jpg/img6-new.jpg 1x,
+          ./jpg/img6-new2x.jpg 2x,
+          "
+            src="./jpg/img3.jpg" alt="Монитор2" min-width="370px" height="290px" class="image-work"/>
             <h3 class="work-head">Дизайнерские решения</h3>
           </li>
         </ul>
@@ -145,7 +160,12 @@
         <h2 class="head-2-descr">Наша команда</h2>
         <ul class="team">
           <li class="team-element">
-            <img src="./jpg/imgp1.jpg" alt="Человек1" min-width="270px" />
+            <img 
+               srcset="
+          ./jpg/imgp1-new.jpg 1x,
+          ./jpg/imgp1-new2x.jpg 2x,
+          "
+            src="./jpg/imgp1.jpg" alt="Человек1" min-width="270px" />
             <div class="name-job">
             <p class="name">
               Николай Кучеренко
@@ -184,7 +204,12 @@
             </ul>
           </li>
           <li class="team-element">
-            <img src="./jpg/imgp2.jpg" alt="Человек2" min-width="270px" />
+            <img
+             srcset="
+          ./jpg/imgp2-new.jpg 1x,
+          ./jpg/imgp2-new2x.jpg 2x,
+          "
+            src="./jpg/imgp2.jpg" alt="Человек2" min-width="270px" />
             <div class="name-job">
             <p class="name">Николай Кучеренко</p>
             <p class="job">Frontend Developer</p> </div>
@@ -220,7 +245,12 @@
             </ul>
           </li>
           <li class="team-element">
-            <img src="./jpg/imgp3.jpg" alt="Человек3" min-width="270px" />
+            <img
+             srcset="
+          ./jpg/imgp3-new.jpg 1x,
+          ./jpg/imgp3-new2x.jpg 2x,
+          "
+            src="./jpg/imgp3.jpg" alt="Человек3" min-width="270px" />
             <div class="name-job"> 
             <p class="name">
               Андрей Шевченко
@@ -258,7 +288,12 @@
             </ul>
           </li>
           <li class="team-element">
-            <img class="team-element-svg" src="./jpg/imgp4.jpg" alt="Человек4" min-width="270px" />
+            <img 
+             srcset="
+          ./jpg/imgp4-new.jpg 1x,
+          ./jpg/imgp4-new2x.jpg 2x,
+          "
+          src="./jpg/imgp4.jpg" alt="Человек4" min-width="270px" />
             <div class="name-job">
             <p class="name">
               Иван Николаев
@@ -351,6 +386,7 @@
     <footer class="footer-class">
       <div class="container">
         <div class="flex-footer">
+          <div class="footer-tablet-flex">
           <div class="footer-element">
             <a class="logotype2" href="">
               <span class="accent-text">Web</span>
@@ -362,7 +398,7 @@
               <p class="number-footer">+38 099 111 11 11</p>
             </address>
           </div>
-          <div class="footer-element">
+          <div class="footer-element footer-element-join">
             <h3 class="join">присоединяйтесь</h3>
             <ul class="social-icon-footer">
               <li class="social-element">
@@ -394,6 +430,7 @@
                   </a>
               </li>
             </ul>
+          </div>
           </div>
         <div class="footer-element footer-element2">
         <section class="sub">
