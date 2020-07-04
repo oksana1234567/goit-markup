@@ -20,14 +20,17 @@
     flex-wrap: wrap;
     padding-top: 94px;
     padding-bottom: 94px;
-    width: 1200px;
-    border-bottom: 1px solid #ececec;
 
     & .benefits-element {
       height: 251px;
-      // width: 270px;
     }
   }
+  @media screen and (min-width: 1200px) {
+    .benefits-element {
+      width: 270px;
+    }
+  }
+
   @media screen and (max-width: 1199px) {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -36,20 +39,31 @@
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .benefits-element {
   @media screen and (max-width: 767px) {
     width: 450px;
+    margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     .benefits & + & {
       margin-left: 30px;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: width 1199px) {
+  @media screen and (max-width: 1199px) {
     width: 354px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .benefits-element:nth-child(2n + 1) {
+    margin-right: 30px;
   }
 }
 
