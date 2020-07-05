@@ -1026,7 +1026,7 @@ img {
 }
 
 .team-element {
-  padding-bottom: 24px;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1751,7 +1751,6 @@ img {
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-block;
     width: 350px;
-    height: 404px;
   }
   .projects-element:hover, .projects-element:focus {
     -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
@@ -1824,7 +1823,6 @@ img {
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-block;
     width: 450px;
-    height: 404px;
   }
   .projects-element:hover, .projects-element:focus {
     -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
