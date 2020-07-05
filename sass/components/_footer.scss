@@ -41,6 +41,12 @@
 .logotype2 {
   display: block;
   padding-bottom: 20px;
+  @media screen and (max-width: 1199px) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 .regular-text2 {
@@ -172,12 +178,16 @@
 @media screen and (max-width: 1199px) {
   .form-footer {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 @media screen and (max-width: 1199px) {
   .form-footer {
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -224,11 +234,14 @@
   position: relative;
   border: none;
 
-  @media screen and (min-width: 768px) {
+  width: 200px;
+
+  @media screen and (min-width: 1200px) {
     display: inline-block;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
+    margin-top: 20px;
   }
 }
 
@@ -240,6 +253,10 @@
   padding-left: 16px;
   border-radius: 4px;
   color: $color-grey-footer;
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+  }
 }
 
 ::-webkit-input-placeholder {

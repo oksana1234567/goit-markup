@@ -7,13 +7,13 @@
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .button-flex {
     padding-bottom: 60px;
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .button-flex {
     padding-top: 94px;
     padding-bottom: 50px;
@@ -31,9 +31,10 @@
 @media screen and (max-width: 767px) {
   .button-flex {
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     margin-bottom: 60px;
-    margin-top: 45px;
+    margin-top: 40px;
+    width: 362px;
   }
 }
 
@@ -54,6 +55,7 @@
   transition-property: color, background-color;
   transition-duration: $duration;
   transition-timing-function: $cubic;
+  font-weight: 500;
 
   &:hover,
   &:focus {

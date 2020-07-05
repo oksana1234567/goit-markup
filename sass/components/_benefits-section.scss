@@ -8,6 +8,7 @@
   text-transform: uppercase;
   margin-top: 30px;
   margin-bottom: 10px;
+  min-width: 450px;
 
   @media screen and (max-width: 767px) {
     text-align: center;
@@ -18,24 +19,24 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1199px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
 
     & .benefits-element {
       height: 251px;
     }
   }
+
   @media screen and (min-width: 1200px) {
     .benefits-element {
       width: 270px;
     }
   }
-
-  @media screen and (max-width: 1199px) {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;
   }
@@ -76,6 +77,9 @@
   letter-spacing: 0.03em;
   margin-top: 0px;
   margin-bottom: 0px;
+  @media screen and (max-width: 767px) {
+    min-width: 450px;
+  }
 }
 
 .benefits-icon {
@@ -123,4 +127,11 @@
 
 .cosmonaut {
   @extend %icon-benefits-common;
+}
+
+.benefits {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    margin-top: 60px;
+  }
 }

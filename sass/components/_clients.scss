@@ -16,13 +16,10 @@
   .comapanies-example:nth-child(2n + 1) {
     margin-right: 30px;
   }
-  .comapanies-example {
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (max-width: 1199px) {
-  .comapanies-example {
+  .comapanies-example:nth-child(-n + 4) {
     margin-bottom: 30px;
   }
 }

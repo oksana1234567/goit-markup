@@ -4,14 +4,15 @@
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 646px;
+  max-width: 696px;
 
   font-size: 44px;
   line-height: 1.36;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     font-size: 26px;
     line-height: 1.61;
+    width: 430px;
   }
 }
 
