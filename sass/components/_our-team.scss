@@ -15,7 +15,6 @@
 .team {
   @media screen and (min-width: 768px) {
     display: flex;
-    // justify-content: space-between;
     flex-wrap: wrap;
   }
 
@@ -36,16 +35,15 @@
 }
 
 .team-element {
+  padding-bottom: 30px;
   @media screen and (min-width: 1200px) {
     height: 417px;
     width: 270px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    height: 422px;
     width: 354px;
   }
   @media screen and (max-width: 767px) {
-    height: 482px;
     width: 450px;
   }
 }
@@ -93,8 +91,6 @@
   display: block;
   text-decoration: none;
   text-align: center;
-  //   width: 273px;
-  //   height: 105px;
 }
 
 .icons {
